@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registration Info - Conference Name">
+    <title>Registration Info - Conference Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registration Information</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="faq.html">FAQ</a>
+        <a href="registration.html">Registration Info</a>
+        <a href="travel.html">Travel Logistics</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Register for the Conference</h2>
+        <p>Join us for an exciting conference filled with insights, networking opportunities, and inspiration!</p>
+        
+        <h3>Registration Fees</h3>
+        <ul>
+            <li>Early Bird Registration (until MM/DD): $150</li>
+            <li>Regular Registration (after MM/DD): $200</li>
+            <li>Student Registration: $75</li>
+        </ul>
+        
+        <h3>Registration Process</h3>
+        <p>To register, please fill out the form below:</p>
+        
+        <form action="submit_registration.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="affiliation">Affiliation/Organization:</label><br>
+            <input type="text" id="affiliation" name="affiliation"><br><br>
+            
+            <label for="registration_type">Registration Type:</label><br>
+            <select id="registration_type" name="registration_type" required>
+                <option value="early_bird">Early Bird</option>
+                <option value="regular">Regular</option>
+                <option value="student">Student</option>
+            </select><br><br>
+            
+            <input type="submit" value="Submit Registration">
+        </form>
+        
+        <h3>Payment Information</h3>
+        <p>Payment can be made via credit card or PayPal upon submission of your registration form.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Conference Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
