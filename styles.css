@@ -4,12 +4,14 @@ body {
     background-color: #80996A; /* Light greenish background */
     margin: 0;
     padding: 0;
+                    padding-bottom: 100px; /* Add extra space at the bottom */
+
     text-align: center; /* Center text in the body */
 }
 
 /* Navigation Bar Styling */
 nav {
-    background-color: #80996A; /* Light greenish background */
+    background-color: #4A6F1E; /* Light greenish background */
     font-family: 'Open Sans', sans-serif; /* Font family */
     padding: 10px; /* Padding for nav */
     text-align: right; /* Aligns navigation to the right */
@@ -24,16 +26,17 @@ nav ul {
 nav ul li {
     display: inline-block; /* Displays items inline */
     position: relative; /* Necessary for dropdown positioning */
-    margin-right: 40px; /* Increased spacing between menu items */
+    width: 190px; /* Set a fixed width for each button */
 }
 
-nav ul li a {
-    color: #4A6F1E; /* Dark green link color */
+nav ul li a, nav ul li span {
+    color: white; /* Dark green link color */
     text-decoration: none; /* Removes underline */
     padding: 10px 15px; /* Padding around links */
+    cursor: pointer; /* Cursor indicates clickable item */
 }
 
-nav ul li:hover > a {
+nav ul li span:hover, nav ul li a:hover {
     background-color: #4A6F1E; /* Dark green on hover */
     color: white; /* White text on hover */
 }
@@ -42,7 +45,7 @@ nav ul li ul {
     display: none; /* Hides dropdowns by default */
     position: absolute; /* Positions dropdowns */
     background-color: #80996A; /* Light greenish background for dropdowns */
-    padding: 10px; /* Dropdown padding */
+    padding: 10px 0; /* Dropdown padding */
     z-index: 1; /* Ensures dropdown is above other content */
 }
 
@@ -52,11 +55,13 @@ nav ul li:hover ul {
 
 nav ul li ul li {
     display: block; /* Stack dropdown items */
-    margin: 0; /* Resets margin */
+margin: 5px 0; /* Add vertical spacing between dropdown items */
+    /* Alternatively, you can use padding */
+    padding: 10px; /* Add padding for better spacing */
 }
 
 nav ul li ul li a {
-    color: #4A6F1E; /* Dark green for dropdown links */
+    color: white; /* Dark green for dropdown links */
 }
 
 nav ul li ul li a:hover {
@@ -159,4 +164,112 @@ a:visited {
 
 a:active {
     color: #2c6a2c; /* Darker green when actively clicked */
+}
+
+/* Styling for the buttons at the bottom-right of the page */
+.bottom-right-buttons {
+    position: fixed;
+    bottom: 80px; /* Adjusts vertical position from the bottom */
+    right: 20px;  /* Adjusts horizontal position from the right */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between the buttons */
+}
+
+.bottom-right-buttons .button {
+    background-color: #4A6F1E; /* Dark green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-right-buttons .button:hover {
+    background-color: #80996A; /* Light green on hover */
+}
+
+/* Event Section Styling */
+.event-section {
+    width: 80%; /* Set the desired width (e.g., 80% of the parent container) */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    margin: 20px auto; /* Center the section with top/bottom margin and auto left/right */
+    color: white; /* Change font color to white */
+    font-size: 1.5em; /* Set a larger font size (1.5em is 1.5 times the base font size) */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #8CA079; /* Optional: add a background color for contrast */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Optional: style for h2 and paragraphs within event sections */
+.event-section h2 {
+    font-size: 2em; /* Increase font size for the section headings */
+}
+
+.event-section p {
+    font-size: 1.2em; /* Set a slightly larger font size for paragraphs */
+}
+
+.event-image {
+    width: 250px; /* Adjust the width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+}
+
+#connect {
+    background-size: 200px;
+    background-position: center;
+}
+
+#collaborate {
+    background-size: 200px;
+    background-position: center;
+}
+
+#celebrate {
+    background-size: 200px;
+    background-position: center;
+}
+
+
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding-left: 0; /* Removes default padding */
+}
+
+li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
+
+#faq {
+  max-width: 800px; /* Limit the width of the section */
+  margin: 0 auto; /* Center the section on the page */
+  padding: 20px;
+}
+
+#faq h2 {
+  text-align: center; /* Center the FAQ title */
+}
+
+.faq-item {
+  margin-bottom: 20px; /* Space between FAQ items */
+}
+
+.faq-item p {
+  line-height: 1.6; /* Improve readability with more line height */
+}
+
+#contact {
+  max-width: 800px; /* Limit the width of the section */
+  margin: 0 auto; /* Center the section on the page */
+  padding: 20px;
+}
+
+#network {
+  max-width: 800px; /* Limit the width of the section */
+  margin: 0 auto; /* Center the section on the page */
+  padding: 20px;
 }

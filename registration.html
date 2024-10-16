@@ -10,26 +10,40 @@
 </head>
 <body>
 
-    <header>
+  <header>
         <img src="logo.png" alt="Conference Logo" class="logo">
-        <h1>Registration Information</h1>
+        <div class="title-container">
+            <h1>Sustainable Business Leaders Retreat 2025</h1>
+            <h2 class="subtitle">Connect, Collaborate, Celebrate</h2>
+        </div>
     </header>
 
+        <!-- Navigation Menu -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="annual-event.html">Annual Event</a>
+            <li><a href="home.html">Home</a></li>
+            <li>
+                <span>2025 Annual Retreat</span> <!-- Removed href -->
                 <ul>
+                    <li><a href="annual-event.html">Overview</a></li>
                     <li><a href="schedule.html">Schedule</a></li>
                     <li><a href="registration.html">Registration Info</a></li>
                     <li><a href="sponsors.html">Sponsors</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </li>
-            <li><a href="year-round.html">Year-Round Connections</a>
+            <li>
+                <span>Year-Round Events</span> <!-- Removed href -->
                 <ul>
-                    <li><a href="change-leader-network.html">Change Leader Network</a></li>
-                    <li><a href="related-events.html">Related Events</a></li>
+                               <li><a href="virtual-events.html">Virtual Events</a></li>
+                    <li><a href="external-events.html">External Events</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Network</span> <!-- Removed href -->
+                <ul>
+                    <li><a href="network.html">Member Network</a></li>
+                    <li><a href="membership.html">Become a Member</a></li>
                 </ul>
             </li>
             <li><a href="about.html">About</a></li>
@@ -38,45 +52,39 @@
     </nav>
 
     <section>
-        <h2>Register for the Conference</h2>
-        <p>Join us for an exciting conference filled with insights, networking opportunities, and inspiration!</p>
+                <h1>Register for the 2025 Sustainable Business Leaders Annual Retreat</h1>
+        <p>Join us for two days of networking, discussions, and collaboration with sustainability professionals, alumni, and students.</p>
         
-        <h3>Registration Fees</h3>
+        <h2>Pricing Information</h2>
         <ul>
-            <li>Early Bird Registration (until MM/DD): $tbd</li>
-            <li>Regular Registration (after MM/DD): $tbd</li>
-            <li>Student Registration: $tbd</li>
+            <li><strong>Two-Day Pass</strong> (available for graduates and outside professionals only):
+                <ul>
+                    <li>$75 for non-members</li>
+                    <li>$65 for members</li>
+                </ul>
+            </li>
+            <li><strong>One-Day Pass</strong> (open to everyone including students):
+                <ul>
+                    <li>$50 for non-members</li>
+                    <li>$40 for members</li>
+                </ul>
+            </li>
         </ul>
-        
-        <h3>Registration Process</h3>
-        <p>To register, please fill out the form below:</p>
-        
-        <form action="submit_registration.php" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="affiliation">Affiliation/Organization:</label><br>
-            <input type="text" id="affiliation" name="affiliation"><br><br>
-            
-            <label for="registration_type">Registration Type:</label><br>
-            <select id="registration_type" name="registration_type" required>
-                <option value="early_bird">Early Bird</option>
-                <option value="regular">Regular</option>
-                <option value="student">Student</option>
-            </select><br><br>
-            
-            <input type="submit" value="Submit Registration">
-        </form>
-        
-        <h3>Payment Information</h3>
-        <p>Payment can be made via credit card or PayPal upon submission of your registration form.</p>
+
+        <p>Ready to secure your spot? <a href="https://www.eventbrite.com/your-event-link" target="_blank">Register on Eventbrite</a> now!</p>
+
+        <p><em>If the pricing is a barrier for you or if you are experiencing financial hardship, please <a href="contact.html">contact us</a> and we will work with you to find a solution.</em></p>
+
     </section>
 
+    <!-- Bottom Buttons -->
+    <div class="bottom-right-buttons">
+        <a href="membership.html" class="button">Become a Member</a>
+        <a href="donate.html" class="button">Donate/Sponsor</a>
+    </div>
+
     <footer>
-        <p>&copy; TBD name. All Rights Reserved.</p>
+        <p>&copy; Sustainable Business Leaders. All Rights Reserved.</p>
     </footer>
 
 </body>
